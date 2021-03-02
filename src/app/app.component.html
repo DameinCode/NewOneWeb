@@ -1,0 +1,15 @@
+<div class="uf"><p>{{title}}</p></div>
+
+<div class="things">
+<!--  <div class="btn">-->
+  <div *ngFor="let cat of categories; let i=index">
+    <button (click) = ChangeIt(cat.name)><strong>{{cat.name}}</strong></button>
+  </div>
+    <div *ngFor="let cat of categories;">
+      <div *ngIf="cat.show">
+      <app-item *ngFor = "let iterCard of cat.iteems;"[item]="iterCard">
+      </app-item>
+    </div>
+  </div>
+</div>
+<!--[items] = "items"-->

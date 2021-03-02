@@ -1,0 +1,31 @@
+.uf {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+.uf p {
+  font-family: 'Bell MT';
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+}
+button{
+  border: 1px solid #5f9b9f;
+  margin-top: 5%;
+  margin-left: 9%;
+  height: 22px;
+  background-color: #000;
+  color: #fff;
+  float: left;
+  cursor: pointer;
+}
+/*.0 {*/
+/*  position: fixed;*/
+/*}*/
+
+/*.todo {*/
+/*  position: relative;*/
+/*}*/
+

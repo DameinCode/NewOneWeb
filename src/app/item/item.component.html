@@ -1,0 +1,18 @@
+
+  <div *ngIf="item.exist" class ="product-card">
+    <img [src] = "item.bonus[currentIndex]" id = "just">
+    <button class="remove" (click)="DropIt()"><img src="https://cdn3.iconfinder.com/data/icons/softwaredemo/PNG/256x256/Close_Box_Red.png"></button>
+    <div class = "rsa">
+      <button class = "oop" (click) = changePhotoL()><</button>
+      <button class = "algo" (click) = changePhotoR()>></button>
+    </div>
+    <p><a class ="amaz" (click)= goAmazon()>{{item.name}}</a></p>
+    <h5>{{item.description}}</h5>
+    <p class="rating"> Rating : {{item.rating}} </p>
+    <div class="it">
+    <a class="shar" (click)="goTelegram()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Telegram_Messenger.png/768px-Telegram_Messenger.png" class ="imm"></a>
+    <a class="shar" (click)="goWhatsapp()"><img src="https://pngicon.ru/file/uploads/whatsapp.png" class="imm"></a>
+      <a (click)="LikeOn()" class="likee"><img src="https://www.freeiconspng.com/uploads/like-heart-icon--16.png" class="like"><p>{{item.numLike}}</p></a>
+  </div>
+
+
